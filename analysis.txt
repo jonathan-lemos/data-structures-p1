@@ -1,0 +1,14 @@
+equals(): O(n^2) runtime O(n) space
+This is O(n) average case but in the absolute worst case it's O(n^2)
+It looks through the list looking for elements that equal the other head. These elements are stored. (up to O(n))
+For each element (O(n)) it checks to see if the sequences are equivalent (O(n^2))
+Storing the elements is a max of O(n) space
+
+removeDuplicates(): O(n) runtime O(n) space
+It iterates through the list storing values it finds in a HashSet.
+If an element is already in the HashSet, it's O(1) to remove it.
+Worst case it will have to store O(n) elements (if all elements are unique), meaning it's O(n) space worst-case.
+Iterating through the list is O(n) because all operations are O(1) and are executed for each element in the list (n)
+	Hashtable store  - O(1) because it's a hashtable
+	Hashtable lookup - O(1) because it's a hashtable
+	n1 = n1.next     - O(1)
